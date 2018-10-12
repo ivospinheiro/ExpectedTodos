@@ -19,6 +19,7 @@ QUnit.module("Todo Model", function (hooks) {
     hooks.afterEach(() => {
         //If the next line is removed the test works fine
         todo1 && todo1.off("_serialize", noop);
+        Todo.connection.deleteInstanceReference(todo1);
         todo1 = undefined;
     });
 
