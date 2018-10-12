@@ -1,0 +1,32 @@
+{
+  "name": "can-connect-issue",
+  "version": "0.0.0",
+  "author": {
+    "name": "Ivo Pinheiro",
+    "email": "ivo.pinheiro@nokia.com"
+  },
+  "private": true,
+  "scripts": {
+    "test": "testee test.html --browsers firefox --reporter Spec"
+  },
+  "files": [
+    "src"
+  ],
+  "steal": {
+    "directories": {
+      "lib": "src"
+    }
+  },
+  "dependencies": {
+    "can-connect": "^2.1.0",
+    "can-define": "^2.7.0",
+    "can-set": "^1.6.0",
+    "steal": "^1.6.5"
+  },
+  "devDependencies": {
+    "can-fixture": "^2.0.2",
+    "steal-qunit": "^1.0.1",
+    "testee": "^0.7.0"
+  },
+  "license": "MIT"
+}
